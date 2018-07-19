@@ -1,0 +1,21 @@
+.nav {
+  z-index: 1;
+  display: flex;
+  background-image: url($bg_footer);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  justify-content: space-between;
+  align-self: stretch;
+  align-items: center;
+  background-color: $color-primary;
+  padding: 1rem 4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+
+  &__logo{
+    height: 3.8rem;
+  }
+}

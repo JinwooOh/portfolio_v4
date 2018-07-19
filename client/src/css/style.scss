@@ -1,0 +1,15 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/base";
+
+@import "components/nav";
+@import "components/header";
+@import "components/mainProject";
+@import "components/footer";
+@import "components/button";
+@import "components/about";
+@import "components/contact";
+@import "components/projectDesc";
+
+@import "layout/layout";

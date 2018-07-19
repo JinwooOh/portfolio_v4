@@ -1,0 +1,75 @@
+.project {
+  padding: 3rem 10%;
+  background-color: $color-white-bg;
+  @include respond(tab-port) {
+    // width < 900?
+    padding: 1rem 5%;
+  }
+  &__heading {
+    color: $color-primary;
+    font-size: 5.2rem;
+    font-weight: 300;
+    border-bottom: 3px solid $color-primary;
+  }
+  &__para {
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+}
+
+.renderProject {
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+  }
+}
+
+.card {
+  flex: 0 1 28rem;
+  padding: 2rem;
+  margin: 1.4rem;
+  min-height: 30rem;
+  @include respond(phone) {
+    min-height: 27rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    flex: 1 1 28rem;
+  }
+  background-color: $color-secondary;
+  color: $color-white;
+  border-radius: 1rem;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: all 0.3s;
+  position: relative;
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  &__desc {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+  &__tags {
+    &--li {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: $color-tertiary-light;
+      display: inline-block;
+      margin: 0 0.5rem;
+      list-style: none;
+
+    }
+  }
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
+  }
+}
+.tags {
+  display: flex;
+  flex-flow: row wrap;
+}

@@ -1,0 +1,73 @@
+<h2>Overview</h2>
+<p>Status Report is the web application to replace spreadsheet based reporting system in Online Program Development</p>
+<hr>
+<h2>Usage</h2>
+<h3>Reporting</h3>
+<ol>
+<li>To report the work or task simply fills out the forms. The course-related form is &quot;COURSE&quot; and Administration related form is &quot;ADMINISTRATION.&quot; Once filling out the form, click &quot;ADD TASK&quot; and the task will go to Summary. A task can be added to Summary more than one.</li>
+<li>Review the tasks that are added to Summary.</li>
+<li>Type your name on the input box. Your name should be showed up automatically</li>
+<li>If everything looks good, click the &quot;SUBMIT&quot; button.</li>
+</ol>
+<h3>Searching</h3>
+<ul>
+<li>Two searching options are provided: search by user and search by course. Choose one of the options to search.</li>
+<li>User Search:
+<ol>
+<li>Type valid start date and end date. The dates are based on task completion dates not reporting dates.</li>
+<li>Type username. The username should be showed up automatically.</li>
+<li>Course task will show up in Course task table and admin task will show up in Admin task table</li>
+</ol>
+</li>
+<li>Course Search
+<ol>
+<li>Type valid start date and end date. The dates are based on task completion dates not reporting dates.</li>
+<li>Choose search type</li>
+<li>Type valid program name or course number</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2>Development</h2>
+<h3>Stack</h3>
+<ol>
+<li>
+<p>Front-End: React</p>
+</li>
+<li>
+<p>CSS Preprocessor: SASS</p>
+<ul>
+<li>(followed the 7-1 pattern <a href="https://sass-guidelin.es/#the-7-1-pattern">Information about 7-1</a>)</li>
+</ul>
+</li>
+<li>
+<p>Back-End: Node, Express</p>
+</li>
+<li>
+<p>Database: MySql</p>
+</li>
+<li>
+<p>API</p>
+</li>
+</ol>
+<ul>
+<li>material-ui: Dialog component is used to handle popup menu.</li>
+<li>react-autosuggest: it is used throughout the application to handle auto-completion.</li>
+<li>react-table: it is used in search page to show the data in the table.</li>
+<li>react-transition-group: it is used to animate components.</li>
+</ul>
+<hr>
+<h2>File structure</h2>
+<p>The application has two main pages which are Report page and Search Page.</p>
+<h3>&quot;src&quot; folder has three folders: component, css and img</h3>
+<ul>
+<li>&quot;component&quot; contains javascript files for React.
+<ul>
+<li>in &quot;component&quot; folder it has three folders: &quot;helper&quot;, &quot;report&quot;, &quot;search&quot;</li>
+<li>to change, message on popup menus such as course guide and admin guide, modify Message.js file in helper folder.</li>
+</ul>
+</li>
+<li>&quot;css&quot; contains all of the files that are related to styling.</li>
+<li>&quot;img&quot; contain one png file for the background image.</li>
+</ul>
+<hr>

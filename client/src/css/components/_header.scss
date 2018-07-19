@@ -1,0 +1,30 @@
+.header {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-tertiary-light2,
+    $color-tertiary-dark2
+  );
+  color: $color-white;
+  margin-top: 2rem;
+  padding: 10rem 10%;
+  @include respond(tab-port) {
+    // width < 900?
+    padding: 10rem 5%;
+  }
+
+  &__title {
+    font-size: 5.2rem;
+    font-weight: 300;
+    border-bottom: 3px solid $color-white;
+  }
+  &__para {
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}

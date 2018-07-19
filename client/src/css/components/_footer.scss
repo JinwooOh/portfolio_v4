@@ -1,0 +1,35 @@
+.footer {
+  color: $color-white;
+  background-image: url($bg_footer);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  &__copyright {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+  }
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+}
+
+.github,
+.twitter,
+.instagram,
+.linkedin {
+  transition: 0.5s all;
+  width: 3.5rem;
+  fill: $color-white;
+  margin: 2rem;
+  &:hover {
+    transform: translateY(-5px);
+    fill: #c5050c;
+  }
+}
+
+.copyright {
+  fill: $color-white;
+}

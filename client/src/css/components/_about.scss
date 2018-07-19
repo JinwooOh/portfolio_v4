@@ -1,0 +1,118 @@
+.about {
+  padding: 3rem 10%;
+  background-color: $color-white;
+  background-image: url($bg_about);
+  margin: 0 auto;
+  @include respond(tab-port) {
+    // width < 900?
+    padding: 1rem 5%;
+  }
+  &__container1,
+  &__container2 {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+  &__heading {
+    color: $color-primary;
+    font-size: 5.2rem;
+    font-weight: 300;
+    border-bottom: 3px solid $color-primary;
+  }
+  &__shape {
+    @include respond(phone) {
+      float: none;
+      margin: 0 auto;
+      margin-bottom: 3.2rem;
+      transform: translateX(0rem) translateY(0rem) skewX(0deg);
+    }
+    width: 20rem;
+    height: 20rem;
+    margin: 0.6rem;
+    float: left;
+    transform: translateX(-2rem) translateY(1rem) skewX(0deg);
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      border-radius: none;
+    }
+  }
+  &__img {
+    height: 100%;
+    transform: translateX(-1rem) scale(1.1);
+    backface-visibility: hidden;
+    transition: all 0.5s;
+  }
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+  }
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &__img {
+    transform: scale(1);
+    filter: blur(0.5px) brightness(75%);
+  }
+
+  // SVG class
+  &__skills {
+    @include respond(big-desktop) {
+      width: 13rem;
+      height: 13rem;
+    }
+    @include respond(phone) {
+      width: 7rem;
+      height: 7rem;
+    }
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+    transition: all 0.3s;
+    &:hover {
+      opacity: 1;
+      transform: translateY(-0.5rem);
+      transform: scale(1.2);
+    }
+  }
+}
+
+.story {
+  &__text {
+    font-size: 2rem;
+  }
+  &__header {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: $color-secondary;
+    &--skill {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: $color-secondary;
+    }
+  }
+}
+
+.skill {
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  margin: 1rem;
+}

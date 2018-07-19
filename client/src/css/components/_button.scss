@@ -1,0 +1,85 @@
+.btn {
+  &__tags,
+  &__contact,
+  &__card,
+  &__backArrow {
+    &,
+    &:link,
+    &:visited {
+      background-color: $color-tertiary-light;
+      color: $color-white;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1.2rem 1.2rem;
+      display: inline-block;
+      border-radius: 0.6rem;
+      transition: all 0.2s;
+      position: relative;
+      font-size: 1.6rem;
+      //Change for the <button> element
+      border: none;
+      cursor: pointer;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      color: $color-secondary;
+      box-shadow: 0 1rem 2rem rgba(black, 0.2);
+      &::after {
+        transform: scaleX(1.2) scaleY(1.4);
+        opacity: 0;
+      }
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+      transform: translateY(-1px);
+      box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+    }
+    &::after {
+      content: "";
+      background-color: $color-primary;
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 1.2rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.4s;
+    }
+  }
+
+  &__card {
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 1rem;
+    width: 90%;
+    padding: 1rem;
+    background-color: $color-primary;
+    color: $color-white;
+  }
+  &__tags {
+    margin-top: 1.4rem;
+    &:not(:last-child) {
+      margin-right: 1.4rem;
+    }
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.3);
+  }
+  &__contact {
+    font-size: 1.4rem;
+    background-color: $color-primary;
+  }
+  &__backArrow{
+    padding: 0.6rem 1.6rem;
+    &:hover .backArrow {
+      fill: $color-secondary;
+    }
+  }
+}

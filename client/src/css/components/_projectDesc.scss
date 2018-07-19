@@ -1,0 +1,101 @@
+.desc{
+  &__container{
+    &--bg{
+    background-color: $color-white-bg;
+    //  background-image: url($bg_footer);
+    }
+    &--desc{
+      max-width: 120rem;
+      padding: 2rem;
+      margin: 0 auto;
+    }
+
+  }
+  &__img{
+    margin-top:5.6rem;
+    max-height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 0;
+  }
+  &__title{
+    font-size: 3.2rem;
+    font-weight: 300;
+    padding: 0.3rem 1.5rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    border-radius: 0.3rem;
+    margin-bottom: 2rem;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.5),
+      rgba($color-tertiary-light, 0.3)
+    );
+  }
+  &__github,
+  &__demoPlay{
+    padding-left: 1.2rem;
+    fill: $color-white;
+    &:hover {
+      fill: $color-secondary;
+    }
+  }
+  &__tags{
+    font-size: 2rem;
+    color: $color-white;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 0.3rem;
+    padding: 0.6rem 1.2rem;
+    list-style: none;
+    border-radius: 0.6rem;
+    background-image: linear-gradient(
+      to right bottom,
+      $color-tertiary-light,
+      $color-tertiary-dark2
+    );
+    opacity: 0.65;
+  }
+  &__desc{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 1rem;
+  }
+  &__heading2{
+    font-size: 2.6rem;
+    font-weight: 300;
+    padding: 0.3rem 1.5rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    border-radius: 0.3rem;
+    margin-bottom: 0.3rem;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.2),
+      rgba($color-tertiary-light, 0.2)
+    );
+  }
+  &__heading3{
+    font-size: 2.3rem;
+    font-weight: 300;
+  }
+  &__ol,
+  &__ul
+  {
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin-left: 3.2rem;
+  }
+  &__para{
+    font-size: 1.8rem;
+    margin: 1rem;
+    font-weight: 300;
+  }
+
+}
+
+.backArrow{
+  fill: $color-white;
+  width: 2.4rem;
+  height: 2.4rem;
+}
