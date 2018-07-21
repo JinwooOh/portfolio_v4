@@ -20,8 +20,8 @@ export const projects = [
   {
     title: 'Status Report',
     description:
-      'Status Report is the web application to replace spreadsheet based reporting system in Online Program Development at UW-Madison.',
-    tags: ['react', 'mysql', 'express', 'node'],
+      'Status Report is the web application to replace spreadsheet-based reporting system in Online Program Development at UW-Madison.',
+    tags: ['react', 'mysql', 'express/node'],
     html: statusReport(),
     imgUrl: imgStatusReport,
     github: 'https://github.com/JinwooOh/statusreport',
@@ -39,8 +39,8 @@ export const projects = [
   {
     title: 'Portfolio Site',
     description:
-      'Single-page application to show my works. I have rebuilt previous portfolio site using React.',
-    tags: ['react', 'javascript', 'express', 'node', 'html', 'css'],
+      'Single-page application to show my works. It uses React framework to make interactive Uis.',
+    tags: ['react', 'javascript', 'express/node', 'html/css'],
     html: portfoliov4(),
     imgUrl: imgPortfolio,
     github: 'https://github.com/JinwooOh/portfolio_v4',
@@ -57,8 +57,8 @@ export const projects = [
   },
   {
     title: 'Old Portfolio',
-    description: 'Old version of my personal websites. It used simple HTML, CSS and JQuery.',
-    tags: ['html', 'css'],
+    description: 'An old version of a portfolio website. It used HTML, CSS, and JQuery.',
+    tags: ['html/css'],
     html: oldPortfolio(),
     imgUrl: imgOldPortfolio,
     github: 'https://github.com/JinwooOh/portfolio_v3',
@@ -67,7 +67,7 @@ export const projects = [
   {
     title: 'Text Comparator',
     description:
-      'This is the program that can compare two text files and produces the result that shows differences. It uses longest common subsequence algorithm ',
+      'This is the program that can compare two text files and produces the result that shows differences. It uses Longest Common Subsequence algorithm.',
     tags: ['java', 'algorithm'],
     html: textComparator(),
     imgUrl: imgTextComparator,
@@ -77,7 +77,7 @@ export const projects = [
   {
     title: 'Mancala AI',
     description:
-      'One of AI class projects.The assinment was creating AI that should beat simple game AI by using minimax algorithm with SBE function.',
+      'One of AI class projects. The assignment was creating AI that should beat simple game AI by using Minimax algorithm with SBE function.',
     tags: ['java', 'algorithm', 'machine learning'],
     html: mancalaAI(),
     imgUrl: imgMancalaAI,

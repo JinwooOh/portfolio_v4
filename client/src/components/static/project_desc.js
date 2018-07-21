@@ -30,7 +30,7 @@ export function statusReport() {
       <h3 className="desc__heading3">Reporting</h3>
       <ol className="desc__ol">
         <li>
-          To report the work or task simply fills out the forms. The course-related form is
+          To report the work or task, simply fill out the forms. The course-related form is
           &quot;COURSE&quot; and Administration related form is &quot;ADMINISTRATION.&quot; Once
           filling out the form, click &quot;ADD TASK&quot; and the task will go to Summary. A task
           can be added to Summary more than one.
@@ -118,9 +118,9 @@ export function calculator() {
     <div>
       <h2 className="desc__heading2">Overview</h2>
       <p className="desc__para">
-        This is my first React project that I made this application after taking an online React
-        course. There were unexpected challenges that I needed to handle. For example, the program
-        should prevent to type multiple operators at the same time.
+        This is my first React project that I made after taking an online React course. There were
+        unexpected challenges that I needed to handle. For example, the program should prevent to
+        type multiple operators at the same time.
       </p>
       <h2 className="desc__heading2">Development</h2>
       <h3 className="desc__heading3">Stack</h3>
@@ -130,7 +130,7 @@ export function calculator() {
       </ol>
       <ul className="desc__ul">
         <li>
-          It used react-bootstrap to rapidly design the application, and easy layout the buttons.
+          It uses react-bootstrap to rapidly design the application, and easy layout the buttons.
         </li>
       </ul>
     </div>
@@ -145,7 +145,7 @@ export function portfoliov4() {
         site, but I enjoy writing code instead of writing simple HTML and CSS. One benefit of having
         a single-page app in React is that it can reduce the significant loading time between each
         page. I would like to provide the greatest experience to viewers of my site as much as I
-        can, and the benefit of using React fits in my needs.
+        can.
       </p>
 
       <h2 className="desc__heading2">Development</h2>
@@ -191,14 +191,14 @@ export function textComparator() {
     <div>
       <h2 className="desc__heading2">Overview</h2>
       <p className="desc__para">
-        I made this application before I transfer to UW-Madison in 2016 however if people ask me
-        "What was you’re the most interesting project?" then I would say this is. This application
+        I made this application before transferring to UW-Madison in 2016 however if people ask me
+        "What were you’re the most interesting project?" then I would say this is. This application
         was made to help my girlfriend who is a stenographer, and she needed a program to compare
         two text files.
       </p>
       <p className="desc__para">
-        During the development, I learned the longest common sequence algorithm to compare words,
-        and Interestingly, one year later, I heard the same algorithm in the algorithm class at
+        During the development, I learned Longest Common Sequence algorithm to compare words, and
+        Interestingly, one year later, I heard the same algorithm in the algorithm class at
         UW-Madison. At the moment, I realized that every topic that I learn from classes can be
         applied to real-world projects.
       </p>
@@ -215,15 +215,11 @@ export function oldPortfolio() {
     <div>
       <h2 className="desc__heading2">Overview</h2>
       <p className="desc__para">
-        This is my previous personal portfolio site that I created with HTML, CSS, and Javascript.
-        The site is a single page website and has the function to send email to me. In addition, the
-        website was my playground where I can experiment with the color scheme and responsive
-        design.
+        This is my old personal portfolio site that I built with HTML, CSS, and Javascript. The site
+        is a single page website and has the function to send email to me. In addition, the website
+        was my playground where I could experiment with the color scheme and responsive design.
       </p>
-      <p className="desc__para">
-        This is my previous personal porfolio site that I created with HTML, CSS and Javascript. The
-        site is a single page website and has the function to send email to me.
-      </p>
+
       <h2 className="desc__heading2">Development</h2>
       <h3 className="desc__heading3">Stack</h3>
       <ul className="desc__ul">

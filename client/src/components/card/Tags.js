@@ -20,18 +20,18 @@ class Tags extends React.Component {
         <button className="btn__tags" onClick={() => this.handleTagOnClick('algorithm')}>
           ALGORITHM
         </button>
-        <button className="btn__tags" onClick={() => this.handleTagOnClick('express')}>
-          EXPRESS
+        <button className="btn__tags" onClick={() => this.handleTagOnClick('express/node')}>
+          EXPRESS/NODE
         </button>
-        <button className="btn__tags" onClick={() => this.handleTagOnClick('node')}>
+        {/* <button className="btn__tags" onClick={() => this.handleTagOnClick('node')}>
           Node
+        </button> */}
+        <button className="btn__tags" onClick={() => this.handleTagOnClick('html/css')}>
+          HTML/CSS
         </button>
-        <button className="btn__tags" onClick={() => this.handleTagOnClick('html')}>
-          HTML
-        </button>
-        <button className="btn__tags" onClick={() => this.handleTagOnClick('css')}>
+        {/* <button className="btn__tags" onClick={() => this.handleTagOnClick('css')}>
           CSS
-        </button>
+        </button> */}
       </div>
     );
   }
