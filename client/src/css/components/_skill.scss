@@ -1,0 +1,73 @@
+.skill {
+  padding: 3rem 10%;
+  background-image: url($bg_skill);
+  background-attachment: fixed;
+
+  @include respond(tab-port) {
+    // width < 900?
+    padding: 1rem 5%;
+  }
+  &__heading {
+    color: $color-primary;
+    font-size: 5.2rem;
+    font-weight: 300;
+    border-bottom: 3px solid $color-primary;
+  }
+  &__container{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+
+    @include respond(tab-port) {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 3rem;
+    }
+  }
+  &__title{
+    &--big{
+      text-align: center;
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: $color-secondary;
+    }
+    &--small{
+      font-size: 2rem;
+      font-weight: 700;
+      color: $color-primary;
+    }
+  }
+  &__core{
+    flex: 0 0 33%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    @include respond(tab-port) {
+      margin-top: 3rem;
+    }
+  }
+  &__tool{
+    flex: 0 0 33%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    @include respond(tab-port) {
+      margin-top: 3rem;
+    }
+  }
+  &__others{
+    flex: 0 0 33%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    @include respond(tab-port) {
+      margin-top: 3rem;
+    }
+  }
+  &__img{
+    display: block;
+    margin: 0 auto;
+  }
+  &__desc{
+    font-size: 2rem;
+  }
+}

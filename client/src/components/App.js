@@ -5,6 +5,7 @@ import Footer from './mainpage/Footer';
 import Header from './mainpage/Header';
 import MainProject from './mainpage/MainProject';
 import About from './mainpage/About';
+import Skill from './mainpage/Skill';
 
 // import Project from './Project';
 // main page
@@ -106,6 +107,8 @@ class App extends Component {
         />
         <Header />
         <About />
+        <Skill />
+
         <MainProject tags={this.state.tags} handleTag={this.handleTag} />
         <Footer />
       </div>

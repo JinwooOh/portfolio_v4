@@ -2,6 +2,7 @@
   padding: 3rem 10%;
   background-color: $color-white;
   background-image: url($bg_about);
+
   margin: 0 auto;
   @include respond(tab-port) {
     // width < 900?
@@ -109,7 +110,7 @@
   }
 }
 
-.skill {
+.whatHaveIWorkWith {
   display: flex;
   justify-content: center;
 
