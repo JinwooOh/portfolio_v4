@@ -30,7 +30,7 @@ export function statusReport() {
       <h3 className="desc__heading3">Reporting</h3>
       <ol className="desc__ol">
         <li>
-          To report the work or task, simply fill out the forms. The course-related form is
+          To report the work or task, fill out the forms. The course-related form is
           &quot;COURSE&quot; and Administration related form is &quot;ADMINISTRATION.&quot; Once
           filling out the form, click &quot;ADD TASK&quot; and the task will go to Summary. A task
           can be added to Summary more than one.
@@ -118,9 +118,9 @@ export function calculator() {
     <div>
       <h2 className="desc__heading2">Overview</h2>
       <p className="desc__para">
-        This is my first React project that I made after taking an online React course. There were
-        unexpected challenges that I needed to handle. For example, the program should prevent to
-        type multiple operators at the same time.
+        This web calculator is my first React project that I made after taking an online React
+        course. There were unexpected challenges that I needed to handle. For example, the program
+        should prevent to type multiple operators at the same time.
       </p>
       <h2 className="desc__heading2">Development</h2>
       <h3 className="desc__heading3">Stack</h3>
@@ -129,9 +129,7 @@ export function calculator() {
         <li>API</li>
       </ol>
       <ul className="desc__ul">
-        <li>
-          It uses react-bootstrap to rapidly design the application, and easy layout the buttons.
-        </li>
+        <li>It uses react-bootstrap to design the application rapidly.</li>
       </ul>
     </div>
   );
@@ -141,10 +139,10 @@ export function portfoliov4() {
     <div>
       <h2 className="desc__heading2">Overview</h2>
       <p className="desc__para">
-        Yes, this website is also my personal project. Using React might be overkill for a portfolio
-        site, but I enjoy writing code instead of writing simple HTML and CSS. One benefit of having
-        a single-page app in React is that it can reduce the significant loading time between each
-        page. I would like to provide the greatest experience to viewers of my site as much as I
+        Yes, this website is also my project. Using React might be overkill for a portfolio site,
+        but I enjoy writing code instead of writing pure HTML and CSS. One benefit of having a
+        single-page app in React is that it can reduce the significant loading time between each
+        page. I would like to provide the exceptional experience to viewers of my site as much as I
         can.
       </p>
 
@@ -199,7 +197,7 @@ export function textComparator() {
       <p className="desc__para">
         During the development, I learned Longest Common Sequence algorithm to compare words, and
         Interestingly, one year later, I heard the same algorithm in the algorithm class at
-        UW-Madison. At the moment, I realized that every topic that I learn from classes can be
+        UW-Madison. At the moment, I realized that every topic that I learn from classes could be
         applied to real-world projects.
       </p>
 
@@ -215,9 +213,9 @@ export function oldPortfolio() {
     <div>
       <h2 className="desc__heading2">Overview</h2>
       <p className="desc__para">
-        This is my old personal portfolio site that I built with HTML, CSS, and Javascript. The site
-        is a single page website and has the function to send email to me. In addition, the website
-        was my playground where I could experiment with the color scheme and responsive design.
+        This website is my old portfolio site that I built with HTML, CSS, and Javascript. The site
+        is a single page website and has the function to send email to me. Also, the website was my
+        playground where I could experiment with the color scheme and responsive design.
       </p>
 
       <h2 className="desc__heading2">Development</h2>
