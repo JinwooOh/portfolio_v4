@@ -509,12 +509,12 @@ body {
     @media only screen and (max-width: 56.25em) {
       .skill__core {
         margin-top: 3rem; } }
-  .skill__tool {
+  .skill__tools {
     flex: 0 0 33%;
     margin-left: 1rem;
     margin-right: 1rem; }
     @media only screen and (max-width: 56.25em) {
-      .skill__tool {
+      .skill__tools {
         margin-top: 3rem; } }
   .skill__others {
     flex: 0 0 33%;
