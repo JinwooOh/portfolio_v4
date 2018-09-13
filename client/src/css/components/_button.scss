@@ -1,6 +1,6 @@
 .btn {
   &__tags,
-  &__contact,
+  &__nav,
   &__card,
   &__backArrow {
     &,
@@ -81,5 +81,8 @@
     &:hover .backArrow {
       fill: $color-secondary;
     }
+  }
+  &__nav{
+    margin: 0 0.8rem;
   }
 }

@@ -22,7 +22,7 @@ export default class Popup extends React.Component {
 
     return (
       <div style={customContentStyle.wrapper}>
-        <button className="btn__contact" onClick={this.props.handleOpen}>
+        <button className="btn__nav" onClick={this.props.handleOpen}>
           Contact
         </button>
         <Dialog

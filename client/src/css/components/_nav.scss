@@ -18,4 +18,19 @@
   &__logo{
     height: 3.8rem;
   }
+  &__container{
+    display: flex;
+  }
+}
+
+.resume{
+  display: flex;
+  justify-content: center;
+  @include respond(phone) {
+   background-color: red;
+  }
+  &__buttom{
+    display: flex;
+    justify-content: center;
+  }
 }

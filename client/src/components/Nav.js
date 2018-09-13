@@ -1,14 +1,25 @@
 import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import Dialog from '@material-ui/core/Dialog';
+import DialogContent from '@material-ui/core/DialogContent';
+import Slide from '@material-ui/core/Slide';
 import PropTypes from 'prop-types';
+import { Document, Page } from 'react-pdf';
+
 import Popup from './helper/Popup';
 import { contact } from './static/Message';
-import logo from './../img/logo.png';
+import logo from '../img/logo.png';
+import { backArrow } from './helper/svgList';
+import resume from './static/Resume_JinwooOh.pdf';
 
 class Nav extends React.Component {
   state = {
     open: false,
+    resumeOpen: false,
+    pageNumber: 1,
   };
+
+  // contact page popup
   handleOpen = () => {
     this.setState({ open: true });
   };
@@ -17,46 +28,73 @@ class Nav extends React.Component {
     this.setState({ open: false });
     this.props.handleResetInvalid();
   };
+
+  transitionSlide = props => {
+    return <Slide direction="right" {...props} />;
+  };
+
+  // resume page dialog
+  handleResumeOpen = () => {
+    this.setState({ resumeOpen: true });
+  };
+
+  handleResumeClose = () => {
+    this.setState({ resumeOpen: false });
+  };
+
   render() {
+    const { pageNumber } = this.state;
+    const { availWidth } = window.screen;
     return (
       <div className="container__nav">
         <nav className="nav">
           <div className="nav__logo-box">
             <img className="nav__logo" src={logo} alt="logo" />
-            {/* <svg
-              className="nav__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-            >
-              <path d="M18.672 11h-1.672v6c0 0.445-0.194 1-1 1h-4v-6h-4v6h-4c-0.806 0-1-0.555-1-1v-6h-1.672c-0.598 0-0.47-0.324-0.060-0.748l8.024-8.032c0.195-0.202 0.451-0.302 0.708-0.312 0.257 0.010 0.513 0.109 0.708 0.312l8.023 8.031c0.411 0.425 0.539 0.749-0.059 0.749z" />
-            </svg> */}
-
-            {/* <span className="nav__logo">Logo</span> */}
           </div>
+          <div className="nav__container">
+            <button className="btn__nav" onClick={this.handleResumeOpen}>
+              Resume
+            </button>
+            <Dialog
+              fullScreen
+              open={this.state.resumeOpen}
+              onClose={this.handleResumeClose}
+              TransitionComponent={this.transitionSlide}
+              scroll="paper"
+            >
+              <nav className="nav">
+                <button className="btn__backArrow" onClick={this.handleResumeClose}>
+                  {backArrow()}
+                </button>
+              </nav>
 
-          <div className="nav__icon-box">
-            {/* <a href="/about" className="nav__about">
-              About
-            </a> */}
-
+              <DialogContent style={{ paddingTop: '6rem' }}>
+                <div className="resume">
+                  <Document file={resume} onLoadSuccess={this.onDocumentLoadSuccess}>
+                    <Page scale={availWidth > 900 ? '1.4' : '0.65'} pageNumber={pageNumber} />
+                  </Document>
+                </div>
+                <div className="resume__buttom">
+                  <a href={resume} className="btn__backArrow" download>
+                    Download Resume
+                  </a>
+                </div>
+              </DialogContent>
+            </Dialog>
             <MuiThemeProvider>
-              <div className="">
-                <Popup
-                  open={this.state.open}
-                  handleOpen={this.handleOpen}
-                  handleClose={this.handleClose}
-                  text={contact(
-                    this.props.handleContact,
-                    this.props.handleSubmit,
-                    this.handleClose,
-                    this.props.invalid,
-                    this.props.init,
-                    this.props.name
-                  )}
-                />
-              </div>
+              <Popup
+                open={this.state.open}
+                handleOpen={this.handleOpen}
+                handleClose={this.handleClose}
+                text={contact(
+                  this.props.handleContact,
+                  this.props.handleSubmit,
+                  this.handleClose,
+                  this.props.invalid,
+                  this.props.init,
+                  this.props.name
+                )}
+              />
             </MuiThemeProvider>
           </div>
         </nav>

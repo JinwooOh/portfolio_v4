@@ -45,6 +45,18 @@ body {
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); }
   .nav__logo {
     height: 3.8rem; }
+  .nav__container {
+    display: flex; }
+
+.resume {
+  display: flex;
+  justify-content: center; }
+  @media only screen and (max-width: 37.5em) {
+    .resume {
+      background-color: red; } }
+  .resume__buttom {
+    display: flex;
+    justify-content: center; }
 
 .header {
   background-image: linear-gradient(to right bottom, #694f42, #597282);
@@ -161,7 +173,7 @@ body {
 .copyright {
   fill: #fff; }
 
-.btn__tags, .btn__tags:link, .btn__tags:visited, .btn__contact, .btn__contact:link, .btn__contact:visited, .btn__card, .btn__card:link, .btn__card:visited, .btn__backArrow, .btn__backArrow:link, .btn__backArrow:visited {
+.btn__tags, .btn__tags:link, .btn__tags:visited, .btn__nav, .btn__nav:link, .btn__nav:visited, .btn__card, .btn__card:link, .btn__card:visited, .btn__backArrow, .btn__backArrow:link, .btn__backArrow:visited {
   background-color: #ad9381;
   color: #fff;
   text-transform: uppercase;
@@ -175,20 +187,20 @@ body {
   border: none;
   cursor: pointer; }
 
-.btn__tags:hover, .btn__contact:hover, .btn__card:hover, .btn__backArrow:hover {
+.btn__tags:hover, .btn__nav:hover, .btn__card:hover, .btn__backArrow:hover {
   transform: translateY(-3px);
   color: #304052;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .btn__tags:hover::after, .btn__contact:hover::after, .btn__card:hover::after, .btn__backArrow:hover::after {
+  .btn__tags:hover::after, .btn__nav:hover::after, .btn__card:hover::after, .btn__backArrow:hover::after {
     transform: scaleX(1.2) scaleY(1.4);
     opacity: 0; }
 
-.btn__tags:active, .btn__tags:focus, .btn__contact:active, .btn__contact:focus, .btn__card:active, .btn__card:focus, .btn__backArrow:active, .btn__backArrow:focus {
+.btn__tags:active, .btn__tags:focus, .btn__nav:active, .btn__nav:focus, .btn__card:active, .btn__card:focus, .btn__backArrow:active, .btn__backArrow:focus {
   outline: none;
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-.btn__tags::after, .btn__contact::after, .btn__card::after, .btn__backArrow::after {
+.btn__tags::after, .btn__nav::after, .btn__card::after, .btn__backArrow::after {
   content: "";
   background-color: #927766;
   display: inline-block;
@@ -228,6 +240,9 @@ body {
   padding: 0.6rem 1.6rem; }
   .btn__backArrow:hover .backArrow {
     fill: #304052; }
+
+.btn__nav {
+  margin: 0 0.8rem; }
 
 .about {
   padding: 3rem 10%;
