@@ -51,9 +51,6 @@ body {
 .resume {
   display: flex;
   justify-content: center; }
-  @media only screen and (max-width: 37.5em) {
-    .resume {
-      background-color: red; } }
   .resume__buttom {
     display: flex;
     justify-content: center; }
@@ -485,6 +482,20 @@ body {
   fill: #fff;
   width: 2.4rem;
   height: 2.4rem; }
+
+.resp-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  margin-bottom: 2rem; }
+
+.resp-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0; }
 
 .skill {
   padding: 3rem 10%;

@@ -21,6 +21,16 @@ export function weather() {
 export function statusReport() {
   return (
     <div className="desc">
+      <div className="resp-container">
+        <iframe
+          className="resp-iframe"
+          title="demo"
+          src="https://www.youtube.com/embed/EpiL3g6-uDo"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        />
+      </div>
       <h2 className="desc__heading2">Overview</h2>
       <p className="desc__para">
         I took over the project from a colleague and rebuilt myself. It was a wonderful experience
@@ -90,7 +100,8 @@ export function statusReport() {
               >
                 {' '}
                 Information about 7-1
-              </a>)
+              </a>
+              )
             </li>
           </ul>
         </li>
@@ -167,7 +178,8 @@ export function portfoliov4() {
               >
                 {' '}
                 Information about 7-1
-              </a>)
+              </a>
+              )
             </li>
           </ul>
         </li>

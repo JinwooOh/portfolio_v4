@@ -9,9 +9,11 @@ class Project extends React.Component {
   state = {
     open: false,
   };
+
   transitionSlide = props => {
     return <Slide direction="right" {...props} />;
   };
+
   handleClickOpen = () => {
     this.setState({ open: true });
   };
