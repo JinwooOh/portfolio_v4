@@ -1,5 +1,5 @@
 import React from 'react';
-import Me from './../../img/image_255.png';
+import Me from '../../img/image_255.png';
 import { js, node, mySql, sass, java, react, git, css, html, mongoDB } from '../helper/svgList.js';
 
 class About extends React.Component {
@@ -17,12 +17,12 @@ class About extends React.Component {
             <h3 className="story__header">I am a Web Developer.</h3>
             <p>
               I am passionate about programming and am interested in web development. I have
-              experience of working in the game industry for three years as a game designer and a
-              producer. Striving of creating my own program makes me become a programmer and a
+              experience of working in the game industry for three years as a game designer and
+              producer. Striving toward creating my own program makes me become a programmer and a
               university student again. I am currently focusing on learning web development along
               with studying computer science courses from UW-Madison. In my free time, I like to
-              ride a bicycle that takes me anywhere, Recently, I finished bike tour from Madison to
-              Minneapolis.
+              ride a bicycle that takes me anywhere, Recently, I finished a bike tour from Madison
+              to Minneapolis.
             </p>
           </div>
         </div>

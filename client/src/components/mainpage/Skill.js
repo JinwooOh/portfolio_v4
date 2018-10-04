@@ -1,7 +1,7 @@
 import React from 'react';
-import core from './../../img/core.png';
-import tools from './../../img/tools.png';
-import others from './../../img/others.png';
+import core from '../../img/core.png';
+import tools from '../../img/tools.png';
+import others from '../../img/others.png';
 
 class Skill extends React.Component {
   render() {
@@ -14,7 +14,7 @@ class Skill extends React.Component {
             <h2 className="skill__title--big">Core</h2>
             <h3 className="skill__title--small">HTML, CSS, Javascript</h3>
             <p className="skill__desc">
-              I found that I enjoy web development that I can combine beautiful designs and
+              I found that I enjoy web development because I can combine beautiful designs and
               functional code.
             </p>
           </div>
@@ -23,8 +23,8 @@ class Skill extends React.Component {
             <h2 className="skill__title--big">Frameworks</h2>
             <h3 className="skill__title--small">React, Express</h3>
             <p className="skill__desc">
-              I know that frameworks can enhance web experience as well as it helps to develop web
-              application efficiently. I am constantly learning various frameworks.
+              I know that frameworks can enhance web experience as well as help to develop web
+              applications efficiently. I am constantly learning various frameworks.
             </p>
           </div>
           <div className="skill__others">
@@ -32,8 +32,7 @@ class Skill extends React.Component {
             <h2 className="skill__title--big">Others</h2>
             <h3 className="skill__title--small">Sass, Mysql, MongoDB, Git, Java</h3>
             <p className="skill__desc">
-              I also know other technologies that help me to develop web application to reach my
-              goal.{' '}
+              I am always keen to learn new technologies required to work efficiently.
             </p>
           </div>
         </div>

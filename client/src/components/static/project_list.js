@@ -7,7 +7,7 @@ import {
   textComparator,
   oldPortfolio,
   mancalaAI,
-} from '../static/project_desc';
+} from './project_desc';
 import imgWeather from '../../img/weather_3200.png';
 import imgStatusReport from '../../img/statusReport_1600.png';
 import imgOldPortfolio from '../../img/oldPortfolio_1600.png';
@@ -67,7 +67,7 @@ export const projects = [
   {
     title: 'Text Comparator',
     description:
-      'This is the program that can compare two text files and produces the result that shows differences. It uses Longest Common Subsequence algorithm.',
+      'This is a program that can compare two text files and produces a result that shows differences. It uses Longest Common Subsequence algorithm.',
     tags: ['java', 'algorithm'],
     html: textComparator(),
     imgUrl: imgTextComparator,
@@ -77,7 +77,7 @@ export const projects = [
   {
     title: 'Mancala AI',
     description:
-      'One of AI class projects. The assignment was creating AI that should beat simple game AI by using Minimax algorithm with SBE function.',
+      'One of my AI class projects. The assignment was to create AI that should beat simple game AI by using the Minimax algorithm with the SBE function.',
     tags: ['java', 'algorithm', 'machine learning'],
     html: mancalaAI(),
     imgUrl: imgMancalaAI,
