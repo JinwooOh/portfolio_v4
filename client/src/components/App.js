@@ -30,16 +30,19 @@ class App extends Component {
       init: true,
     });
   };
+
   handleTag = e => {
     this.setState({
       tags: e,
     });
   };
+
   handleContact = e => {
     this.setState({
       [e.target.name]: e.target.value,
     });
   };
+
   async handleSubmit(e) {
     e.preventDefault();
     if (!e.target.checkValidity()) {
@@ -94,6 +97,7 @@ class App extends Component {
       init: true,
     });
   }
+
   render() {
     return (
       <div className="container">
