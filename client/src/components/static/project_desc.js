@@ -258,3 +258,32 @@ export function mancalaAI() {
     </div>
   );
 }
+export function whoAreMyParents() {
+  return (
+    <div>
+      <h2 className="desc__heading2">Overview</h2>
+      <p className="desc__para">
+        While I was in a Asian American Study class, I had a chance to see a Time Magazine image
+        that shows a grid image gallery. The gallery represents seven different races with future
+        child images that are made by Morph 2.0 program. I was interested in this gallery because
+        the child images show how Americans look in the near future. In another lecture and from
+        assigned reading, I had a chance to see the Hapa project images created by Kip Fulbeck.
+        According to Kip Fulbeck, Hapa means that mixed ethnic heritage with partial roots in Asian
+        and or Pacific Islander ancestry (https://kipfulbeck.com/the-hapa-project/hapa-about/). The
+        way the authors captured images is somehow similar to the Time Magazine gallery: unclothed
+        from the shoulders up, and without jewelry, glasses. Even though each page of the book shows
+        a race of a person, the author mentions, "The Hapa Project is fundamentally a project about
+        identity rather than race: “It’s about identity using race as a starting point.” " in his
+        homepage (https://kipfulbeck.com/the-hapa-project/hapa-about/). My motivation for creating
+        "Who are my parents." is connecting the Hapa project's idea with morphic technology, which
+        allows people to combine two images with its similarities.
+      </p>
+
+      <h2 className="desc__heading2">Development</h2>
+      <ul className="desc__ul">
+        <li>React and Sass are used for front-end development.</li>
+        <li>Images are from Time magazine that was released on Nov.18, 1993.</li>
+      </ul>
+    </div>
+  );
+}

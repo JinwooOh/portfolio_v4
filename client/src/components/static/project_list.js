@@ -7,7 +7,8 @@ import {
   textComparator,
   oldPortfolio,
   mancalaAI,
-} from '../static/project_desc';
+  whoAreMyParents,
+} from './project_desc';
 import imgWeather from '../../img/weather_3200.png';
 import imgStatusReport from '../../img/statusReport_1600.png';
 import imgOldPortfolio from '../../img/oldPortfolio_1600.png';
@@ -15,6 +16,7 @@ import imgCalculator from '../../img/calculator_1600.png';
 import imgTextComparator from '../../img/textComparator_1600.png';
 import imgMancalaAI from '../../img/mancalaAI_1600.png';
 import imgPortfolio from '../../img/portfolio_1600.png';
+import imgWhoAreMyParents from '../../img/whoAreMyParernts_1600.png';
 
 export const projects = [
   {
@@ -83,5 +85,15 @@ export const projects = [
     imgUrl: imgMancalaAI,
     github: 'https://github.com/JinwooOh/minimax_game_playing',
     demo: '',
+  },
+  {
+    title: 'Who Are My Parents',
+    description:
+      'Image matching game. The project was created to spread the message of multiracialism',
+    tags: ['react', 'javascript'],
+    html: whoAreMyParents(),
+    imgUrl: imgWhoAreMyParents,
+    github: 'https://github.com/JinwooOh/multiracialism/tree/master/multiracialism',
+    demo: 'https://inspiring-benz-2586e3.netlify.com/',
   },
 ];
