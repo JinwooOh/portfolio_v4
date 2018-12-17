@@ -3,7 +3,7 @@ import React from 'react';
 export function weather() {
   return (
     <div className="desc">
-      <h2 className="desc__heading2">Usage</h2>
+      <h2 className="desc__heading2">Overview</h2>
       <p className="desc__para">
         Weather web application. It uses Wunderground API to gather weather information. A user can
         type zip code to see specific geolocational information with his or her choice of weather
@@ -18,6 +18,7 @@ export function weather() {
     </div>
   );
 }
+
 export function statusReport() {
   return (
     <div className="desc">
@@ -34,53 +35,36 @@ export function statusReport() {
       <h2 className="desc__heading2">Overview</h2>
       <p className="desc__para">
         I took over the project from a colleague and rebuilt myself. It was a wonderful experience
-        that I learned so much and provided meaningful service to other coworkers.
+        that I learned React and understood how back-end site works. More importantly, I am proud my
+        project provides meaningful service to coworkers.
       </p>
-      <h2 className="desc__heading2">Usage</h2>
-      <h3 className="desc__heading3">Reporting</h3>
+      <h2 className="desc__heading2">Description</h2>
+      <h3 className="desc__heading3">Functionality</h3>
       <ol className="desc__ol">
         <li>
-          To report the work or task, fill out the forms. The course-related form is
-          &quot;COURSE&quot; and Administration related form is &quot;ADMINISTRATION.&quot; Once
-          filling out the form, click &quot;ADD TASK&quot; and the task will go to Summary. A task
-          can be added to Summary more than one.
+          Users can submit their work hours through the form. Auto-completion of users and program
+          names help them to fill out the form quickly.
         </li>
-        <li>Review the tasks that are added to Summary.</li>
-        <li>Type your name on the input box. Your name should be showed up automatically</li>
-        <li>If everything looks good, click the &quot;SUBMIT&quot; button.</li>
+        <li>
+          Supervisors or users themselves, they can search their work hours through search
+          functions. The result will be shown in tables and beautiful pie charts.
+        </li>
+        <li>
+          A manager of the Status Report can edit course numbers and program names through a login
+          panel.{' '}
+        </li>
       </ol>
-      <h3 className="desc__heading3">Searching</h3>
-      <ul className="desc__ul">
+      <h3 className="desc__heading3">Result</h3>
+      <ol className="desc__ul">
         <li>
-          Two searching options are provided: search by user and search by course. Choose one of the
-          options to search.
+          Currently, it is in a transit stage where employees report their work hours in both
+          tradition way and Status Report online form.
         </li>
         <li>
-          User Search:
-          <ol className="desc__ol">
-            <li>
-              Type valid start date and end date. The dates are based on task completion dates not
-              reporting dates.
-            </li>
-            <li>Type username. The username should be showed up automatically.</li>
-            <li>
-              Course task will show up in Course task table and admin task will show up in Admin
-              task table
-            </li>
-          </ol>
+          Status Report will replace the spreadsheet-based reporting system for the design and
+          Development Department of the UW Madison Division of Continuing Studies.
         </li>
-        <li>
-          Course Search
-          <ol className="desc__ol">
-            <li>
-              Type valid start date and end date. The dates are based on task completion dates not
-              reporting dates.
-            </li>
-            <li>Choose search type</li>
-            <li>Type valid program name or course number</li>
-          </ol>
-        </li>
-      </ul>
+      </ol>
 
       <h2 className="desc__heading2">Development</h2>
       <h3 className="desc__heading3">Stack</h3>
@@ -124,6 +108,7 @@ export function statusReport() {
     </div>
   );
 }
+
 export function calculator() {
   return (
     <div>
