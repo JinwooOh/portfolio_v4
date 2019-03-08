@@ -47,6 +47,9 @@ body {
     height: 3.8rem; }
   .nav__container {
     display: flex; }
+  @media only screen and (max-width: 75em) {
+    .nav {
+      padding: 1rem 2rem; } }
 
 .resume {
   display: flex;
@@ -240,6 +243,9 @@ body {
 
 .btn__nav {
   margin: 0 0.8rem; }
+  .btn__nav a {
+    text-decoration: none;
+    color: inherit; }
 
 .about {
   padding: 3rem 10%;

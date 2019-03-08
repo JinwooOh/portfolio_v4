@@ -84,5 +84,9 @@
   }
   &__nav{
     margin: 0 0.8rem;
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
   }
 }

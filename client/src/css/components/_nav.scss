@@ -21,6 +21,9 @@
   &__container{
     display: flex;
   }
+  @include respond(tab-land) {
+    padding: 1rem 2rem;
+  }
 }
 
 .resume{

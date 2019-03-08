@@ -5,7 +5,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import Slide from '@material-ui/core/Slide';
 import PropTypes from 'prop-types';
 import { Document, Page } from 'react-pdf';
-
+import { Link } from 'react-router-dom';
 import Popup from './helper/Popup';
 import { contact } from './static/Message';
 import logo from '../img/logo.png';
@@ -96,6 +96,11 @@ class Nav extends React.Component {
                 )}
               />
             </MuiThemeProvider>
+            <button className="btn__nav">
+              <a rel="noopener noreferrer" target="_blank" href="https://jinwoocode.com/">
+                Blog
+              </a>
+            </button>
           </div>
         </nav>
       </div>
