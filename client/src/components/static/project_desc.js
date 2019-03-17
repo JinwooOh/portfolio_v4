@@ -5,16 +5,44 @@ export function weather() {
     <div className="desc">
       <h2 className="desc__heading2">Overview</h2>
       <p className="desc__para">
-        Weather web application. It uses Wunderground API to gather weather information. A user can
-        type zip code to see specific geolocational information with his or her choice of weather
-        unit.
+        Weather web application. It uses Dark Sky API to gather weather information and OpenCage to
+        gather geo-information. A user can type a zip code or a place name to see specific
+        geolocational information with his or her choice of weather unit.
       </p>
       <h2 className="desc__heading2">Development</h2>
+      <p className="desc__para">
+        Initially, I used Wunderground API. It comes with both weather and geo-information so that I
+        don't have to use other API for geo-information. Unfortunately, the API is no longer support
+        free-tier option.
+      </p>
+      <p className="desc__para">
+        According to Dark Sky API, they have disabled CORS for security reason. To bypass CORS, I
+        made the proxy API server. It takes a request from a client, and respond to a client with
+        information that gathers from Dark Sky API. It also has the advantage of hiding a secret key
+        since the client doesn't need to send an API call with a secret key.
+      </p>
+      <p className="desc__para">A client is deployed on Netlify. A server is deployed on Heroku</p>
       <h3 className="desc__heading3">Stack</h3>
-      <ul className="desc__ul">
-        <li>Front-End: React</li>
-        <li>Jquery for querying API data from Wunderground.</li>
-      </ul>
+      <ol className="desc__ul">
+        <li>Front-End: React, Bootstrap</li>
+        <li>Back-End: Node, Express</li>
+        <li>
+          API:{' '}
+          <a target="_blank" rel="noreferrer noopener" href="https://darksky.net/dev">
+            Dark Sky
+          </a>
+          ,{' '}
+          <a target="_blank" rel="noreferrer noopener" href="https://opencagedata.com/">
+            OpenCage
+          </a>
+        </li>
+        <li>
+          Recourse: icons by{' '}
+          <a target="_blank" rel="noreferrer noopener" href="http://adamwhitcroft.com/climacons/">
+            @adamwhitcroft
+          </a>
+        </li>
+      </ol>
     </div>
   );
 }
@@ -79,8 +107,8 @@ export function statusReport() {
               (followed the 7-1 pattern
               <a
                 target="_blank"
-                href="https://sass-guidelin.es/#the-7-1-pattern"
                 rel="noreferrer noopener"
+                href="https://sass-guidelin.es/#the-7-1-pattern"
               >
                 {' '}
                 Information about 7-1

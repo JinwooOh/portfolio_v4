@@ -6,7 +6,7 @@
     {
       "label": "Compile Markdown",
       "type": "shell",
-      "command": "markdown-it calculator.md -o calculator.html",
+      "command": "markdown-it weather.md -o weather.html",
       "group": "build",
       "problemMatcher": []
     }

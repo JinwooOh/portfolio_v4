@@ -31,12 +31,12 @@ export const projects = [
   },
   {
     title: 'Weather App',
-    description: 'Weather web application. It uses Wunderground API to gather weather information.',
-    tags: ['react', 'javascript'],
+    description: 'Weather web application. It uses Dark Sky API to gather weather information.',
+    tags: ['react', 'javascript', 'express/node'],
     html: weather(),
     imgUrl: imgWeather,
     github: 'https://github.com/JinwooOh/weather',
-    demo: 'http://jinwoo-oh.com/project/weather/',
+    demo: 'https://darkskyweather.netlify.com/',
   },
   {
     title: 'Portfolio Site',
