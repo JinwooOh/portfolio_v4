@@ -16,13 +16,8 @@ class About extends React.Component {
           <div className="story__text">
             <h3 className="story__header">I am a Web Developer.</h3>
             <p>
-              I am passionate about programming and am interested in web development. I have
-              experience of working in the game industry for three years as a game designer and a
-              producer. Striving of creating my own program makes me become a programmer and a
-              university student again. I am currently focusing on learning web development along
-              with studying computer science courses from UW-Madison. In my free time, I like to
-              ride a bicycle that takes me anywhere, Recently, I finished bike tour from Madison to
-              Minneapolis.
+            I am passionate about programming and am interested in web development. I have experience of working in the game industry for three years as a game designer and a producer. Striving for creating my own program makes me become a programmer and a university student again. I graduated from UW-Madison 2018 December,and currently work at <a href="https://info.polco.us/" target="_blank" rel="noreferrer noopener">
+                    Polco.</a> In my free time, I like to ride a bicycle that takes me anywhere. A few years ago, I rode a bicycle from Madison to Minneapolis
             </p>
           </div>
         </div>
