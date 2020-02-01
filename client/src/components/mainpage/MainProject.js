@@ -7,7 +7,7 @@ class Project extends React.Component {
   render() {
     return (
       <div className="project">
-        <h2 className="project__heading">Projects</h2>
+        <h2 className="project__heading">Projects (~ 2018)</h2>
         <Tags tags={this.props.tags} handleTag={this.props.handleTag} />
         <RenderProject tags={this.props.tags} />
       </div>
